@@ -2,80 +2,72 @@
 
 ## Project Overview
 
-This project investigates the use of machine learning techniques for detecting fraudulent credit card transactions. The objective is to evaluate whether transaction-related features can effectively distinguish fraudulent transactions from legitimate ones.
+This project investigates the application of machine learning techniques for detecting fraudulent credit card transactions.
 
-The analysis includes data preprocessing, exploratory data analysis (EDA), model development, threshold tuning, calibration analysis, cost-based evaluation, and feature importance analysis.
+The study evaluates the performance of Logistic Regression, Decision Tree, Random Forest, and XGBoost models using multiple evaluation approaches including threshold tuning, calibration analysis, cost-based analysis, and feature importance analysis.
 
-## Dataset
+## Dataset Features
 
-The dataset contains credit card transaction records with the following information:
-
-* Transaction Amount
-* Month
-* Day of Week
-* Weekend Indicator
-* Transaction Location
-* Transaction Type
-* Fraud Label (Target Variable)
+- Transaction Amount
+- Month
+- Day of Week
+- Weekend Indicator
+- Transaction Location
+- Transaction Type
+- Fraud Label (Target Variable)
 
 ## Methodology
 
 ### Data Preprocessing
-
-* Missing value inspection
-* One-hot encoding of categorical variables
-* Train-test split (80:20, stratified)
+- Missing value inspection
+- One-hot encoding of categorical variables
+- Train-test split (80:20)
 
 ### Exploratory Data Analysis
-
-* Fraud rate by location
-* Fraud rate by transaction type
-* Amount distribution by fraud status
-* Feature correlation analysis
+- Fraud rate by location
+- Fraud rate by transaction type
+- Amount distribution analysis
+- Correlation analysis
 
 ### Machine Learning Models
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- XGBoost
 
-* Logistic Regression
-* Decision Tree
-* Random Forest
-* XGBoost
-
-### Model Evaluation
-
-* Confusion Matrix
-* ROC Curve
-* Precision-Recall Curve
-* Threshold Tuning
-* Calibration Analysis
-* Cost-Based Analysis
+### Evaluation Techniques
+- Confusion Matrix
+- ROC Curve
+- Precision-Recall Curve
+- Threshold Tuning
+- Calibration Analysis
+- Cost Analysis
+- Feature Importance
 
 ## Key Findings
 
-* Transaction amount distributions were similar for fraud and non-fraud transactions.
-* Correlation analysis showed very weak relationships between the target variable and available predictors.
-* All classification models achieved limited fraud detection performance.
-* Threshold tuning and calibration provided only marginal improvements.
-* Cost analysis indicated that missed fraud cases contributed most of the total financial loss.
+- Transaction amount showed limited separation between fraud and non-fraud transactions.
+- Correlations between predictors and the fraud label were generally weak.
+- All models demonstrated limited fraud detection capability.
+- Threshold tuning and calibration produced only marginal improvements.
+- Cost analysis indicated that missed fraud cases contributed most of the overall financial loss.
+- Feature importance analysis identified transaction amount as the most influential variable.
 
-## Repository Contents
+## Repository Structure
 
-* `Credit_Card_Fraud.ipynb` – Complete analysis notebook
-* `report.pdf` – Internship project report
-* `*.png` – EDA plots and model evaluation figures
+- `Credit_Card_Fraud.ipynb` : Complete project notebook
+- `Credit_Card_Fraud_Detection_Report.pdf` : Final internship report
+- `*.png` : EDA and model evaluation figures
 
-## Tools and Libraries
+## Tools Used
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* XGBoost
-
-## Results Summary
-
-The machine learning models showed limited ability to distinguish fraudulent and legitimate transactions. Logistic Regression achieved the highest fraud detection rate, while Random Forest produced the lowest false-positive rate. Threshold tuning, calibration, and cost analysis indicated that the available features contained only weak predictive information regarding fraud occurrence.
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- XGBoost
 
 ## Author
 
