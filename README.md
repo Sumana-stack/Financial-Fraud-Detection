@@ -74,3 +74,11 @@ The study evaluates the performance of Logistic Regression, Decision Tree, Rando
 **Sumana Jana**
 
 Internship Project – Data Science and Analytics
+
+### Project Mentors / Team Members
+
+- Ameya
+- Govind
+- P D Manoj
+- Rahul Reddy
+- Swaroop Ambati
