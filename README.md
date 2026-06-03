@@ -73,6 +73,10 @@ The dataset contains credit card transaction records with the following informat
 * Scikit-learn
 * XGBoost
 
+## Results Summary
+
+The machine learning models showed limited ability to distinguish fraudulent and legitimate transactions. Logistic Regression achieved the highest fraud detection rate, while Random Forest produced the lowest false-positive rate. Threshold tuning, calibration, and cost analysis indicated that the available features contained only weak predictive information regarding fraud occurrence.
+
 ## Author
 
 **Sumana Jana**
