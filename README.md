@@ -75,7 +75,7 @@ The study evaluates the performance of Logistic Regression, Decision Tree, Rando
 
 Internship Project – Data Science and Analytics
 
-### Project Mentors / Team Members
+### Team Members
 
 - Ameya
 - Govind
